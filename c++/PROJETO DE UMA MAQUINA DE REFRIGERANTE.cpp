@@ -1,8 +1,8 @@
-// Autor:DONIZETE CRISOSTOMO BARBOSA
+// Autor:DONIZETE CRISOSTOMO 
 
-// Analise e Desenvolvimento de Sistemas NOITE
-//Faculdade de Tecnologia de Ribeir˜ao Preto
-// Algoritmos e Logica de Programaç˜ao
+// Analise e Desenvolvimento de Sistemas 
+//Faculdade de Tecnologia de RibeirËœao Preto
+// Algoritmos e Logica de ProgramaÃ§Ëœao
 
 
 #include <iostream>
@@ -10,10 +10,10 @@ using namespace std;
 
 int main()
 {
-// Declaração das variaveis foi usado uma constante  nas variaveis,ela nao deixa a variavel ser modificada durante a execução
+// DeclaraÃ§Ã£o das variaveis foi usado uma constante  nas variaveis,ela nao deixa a variavel ser modificada durante a execuÃ§Ã£o
     const int FantaProduto=1,DoritosProduto=2,CocaProduto=3, AguaProduto=4,RedbullProduto=5;
     const int Chetosproduto=6,PingaProduto=7,RufolsProduto=8,BolachaBauducoProduto= 9,BarraChocolateProduto=10;
-//Declaração das variaveis do tipo inteiro
+//DeclaraÃ§Ã£o das variaveis do tipo inteiro
     int QuantiaFanta=2,QuantiaDoritos=10,QuantiaCoca=4,QuantiaAgua=6,QuantiaRedbull=8;
     int QuantiaChetos=10,QuantiaPinga=1,QuantiaRufols=9,QuantiaBolachBauduco=10,QuantiaBarrachoolate=15;
 
@@ -26,12 +26,12 @@ int main()
 
     char admin = 'a';
 
-    //Array contem 11 possiçoes  do produto e que cada posição faz referencia a um produto
+    //Array contem 11 possiÃ§oes  do produto e que cada posiÃ§Ã£o faz referencia a um produto
     double produtosPreco[11];
 
-    // array declarado a cima chamado produtosPreco, ao lado uma variavel recebendo as posições do array,
-    // do produto no qual o usuario digita e identifica numero do produto,junto ao lado a variavel fantaPreço com o valor do produto
-    // dop array junto com os preço
+    // array declarado a cima chamado produtosPreco, ao lado uma variavel recebendo as posiÃ§Ãµes do array,
+    // do produto no qual o usuario digita e identifica numero do produto,junto ao lado a variavel fantaPreÃ§o com o valor do produto
+    // dop array junto com os preÃ§o
     //que e o valor que faz referencia ao valor da fanta no caso 1
     produtosPreco[FantaProduto] = FantaPreco;
     produtosPreco[DoritosProduto] = DoritosPreco;
@@ -44,7 +44,7 @@ int main()
     produtosPreco[BolachaBauducoProduto] = BolachaBauducoPreco;
     produtosPreco[BarraChocolateProduto] = BarrachocolatePreco;
 
-    //araray do tipo int  contendo 11 posisçoes cada quantia faz referencia a quantos produtos tem de determinado item junto com a variavel recebendo o codigo do produto e a outra com a quantidade de itens
+    //araray do tipo int  contendo 11 posisÃ§oes cada quantia faz referencia a quantos produtos tem de determinado item junto com a variavel recebendo o codigo do produto e a outra com a quantidade de itens
     int quantiaProdutos[11];
     quantiaProdutos[FantaProduto]=QuantiaFanta;
     quantiaProdutos[DoritosProduto]=QuantiaDoritos;
@@ -57,7 +57,7 @@ int main()
     quantiaProdutos[BolachaBauducoProduto]=QuantiaBolachBauduco;
     quantiaProdutos[BarraChocolateProduto]=QuantiaBarrachoolate;
 
-//começo do while
+//comeÃ§o do while
     while(ContinuaComprando == 'S' || ContinuaComprando == 's')
     {
         cout<<endl<<" Digite um numeros de 1 a 10 para escolher o produto:"<<endl;
@@ -84,11 +84,11 @@ int main()
         cout<<endl<<" Escolha o produto:"<<endl;
         cin>>Escolherproduto;
 
-        //Se a escolha for maior que 11 esssa opção não exite
+        //Se a escolha for maior que 11 esssa opÃ§Ã£o nÃ£o exite
         if (Escolherproduto >=11)
         {
             cout<<"ESSA OPCAO NAO EXISTE !!!"<<endl;
-            cout<<"Escolha outra opçao que exita no menu:"<<endl;
+            cout<<"Escolha outra opÃ§ao que exita no menu:"<<endl;
 
         }
         else
@@ -232,7 +232,7 @@ int main()
 
         switch (admin)
         {
-        //selecinar admin com botão a
+        //selecinar admin com botÃ£o a
         case 'a':
             //quantos produtos tem na maquina
             cout<<"Quantidadade de Fanta: "<<QuantiaFanta<<endl;
