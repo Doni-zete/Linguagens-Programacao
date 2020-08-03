@@ -1,12 +1,12 @@
 // Autor:DONIZETE CRISOSTOMO BARBOSA
 
 // Analise e Desenvolvimento de Sistemas
-//Faculdade de Tecnologia de Ribeir√£o Preto
-// Algoritmos e Logica de Programa√ß√£o
+//Faculdade de Tecnologia de Ribeiròao Preto
+// Algoritmos e Logica de ProgramaÁòao
 
 #include <iostream>
 
-//  definido  quartoze define constante para que o valor n√£o seja alterado
+//  definido  quartoze define constante para que o valor n„o seja alterado
 #define TOTALVAGAS 120
 #define CARRO 1
 #define CAMINHONETE 2
@@ -24,7 +24,7 @@
 
 using namespace std;
 
-//fun√ß√£o posicao que o veiculo esta  as vagas o andar, e as horas de entrada e saida com as aloca√ß√£o na matriz
+//funÁ„o posicao que o veiculo esta  as vagas o andar, e as horas de entrada e saida com as alocaÁ„o na matriz
 void posEstacionarVeiculo (int vagas[TOTALVAGAS][4], int vagasAndar[], int andar, int hora,int horaSaida)
 {
     int posicaoVaga = 0;
@@ -48,13 +48,13 @@ void posEstacionarVeiculo (int vagas[TOTALVAGAS][4], int vagasAndar[], int andar
 
 }
 
-//Fun√ß√£o apenas para mostrar a palavra "op√ßao"
+//FunÁ„o apenas para mostrar a palavra "opÁao"
 void exibirMensagemOpcao()
 {
     cout << "Opcao: ";
 }
 
-//fun√ßao de retirada do veiculo pegando a posicao o andar
+//funÁao de retirada do veiculo pegando a posicao o andar
 void retirarCarro(int vagas[TOTALVAGAS][4],int posicaoRetirar,int vagasAndar[])
 {
     if(vagas[posicaoRetirar][POSOCUPADA]==1)
@@ -160,7 +160,7 @@ int main()
             while(opcao != 0)
             {
                 //area do sistema para colaboradores
-                cout << "\n O que voc√™ gostaria de fazer? \n[1- Ver faturamento] \n[2 - Ver quantidade de Veiculos]\n[3 -Exibir Relatorio de ENTRADA E SAIDA]\n \n[0 - SAIR]\n";
+                cout << "\n O que vocÍ gostaria de fazer? \n[1- Ver faturamento] \n[2 - Ver quantidade de Veiculos]\n[3 -Exibir Relatorio de ENTRADA E SAIDA]\n \n[0 - SAIR]\n";
                 exibirMensagemOpcao();
                 cin >> opcao;
                 if(opcao==1)
@@ -187,7 +187,7 @@ int main()
                     quantidadeVeiculosNaoAtendidos= TOTALVAGAS-quantidadeDeCarrosEstationados(vagas);
 
                     cout <<"\nTotal de Veiculos que passou pelo estacionamento:"<<contadorDeVagas<<endl;
-                    cout <<"\nVagas que n√£o foram usadas:"<<quantidadeVeiculosNaoAtendidos<<endl;
+                    cout <<"\nVagas que n„o foram usadas:"<<quantidadeVeiculosNaoAtendidos<<endl;
                 }
 
                 else if(opcao == 3)
@@ -217,7 +217,7 @@ int main()
             {
             case CARRO:
                 //chama a funcao posEstacionarVeiculo que contem as vagas vagaandar  a horaentrda e horasaida
-                //faz a decrementa√ß√£o do total de carro o do caontador de vagas a encrementa√ß√£o do contador de carros
+                //faz a decrementaÁ„o do total de carro o do caontador de vagas a encrementaÁ„o do contador de carros
                 // e o calculo para cobrar por hora
                 if(totalCarros > 0 && (vagasAndar[ANDAR_UM] > 0 || vagasAndar[ANDAR_DOIS] > 0))
                 {
@@ -248,7 +248,7 @@ int main()
 
                 break;
             //chama a funcao posEstacionarVeiculo que contem as vagas vagaandar  a horaentrda e horasaida
-            //faz a decrementa√ß√£o do total de carro o do caontador de vagas a encrementa√ß√£o do contador de carros
+            //faz a decrementaÁ„o do total de carro o do caontador de vagas a encrementaÁ„o do contador de carros
             // e o calculo para cobrar por hora
             case CAMINHONETE:
                 if(totalCaminhonetes > 0 && (vagasAndar[ANDAR_UM] > 0 || vagasAndar[ANDAR_TRES] > 0 || vagasAndar[ANDAR_CINCO] > 0))
