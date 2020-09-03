@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novotext</title>
+</head>
+<body>
+<h1>Criptomoeda</h1>
+
+Moeda <input type="text" name="txtbtc" id="txtbtc">
+
+<input type="button" value="Feito" onclick="bit()">
+<div id="res"></div>
+
+<script>
+function bit(){
+var bct= window.document.querySelector('input#txtbtc')
+var res= window.document.querySelector('div#res')
+var conf=(bct.value)
+res.innerHTML =`Sua moeda${conf}`
+
+}
+
+</script>
+
+    
+</body>
+</html>

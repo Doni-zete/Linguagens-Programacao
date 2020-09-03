@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Cadastro de país</h1>
+Entre com Páis <input type="text" name="textt" id="textt">
+    <input type="button" value="Cadastro" onclick="cadastrado()">
+    <div id="cad">
+
+    </div>
+
+    <script>
+        function cadastrado() {
+            var cdc = window.document.querySelector('input#textt')
+            var cad = window.document.querySelector('div#cad')
+            var tex =(cdc.value)
+           cad.innerHTML = `<p>Voce esta no: ${tex}</p>`
+           if (tex =='Brasil'||tex=='brasil'){
+               cad.innerHTML +=`Você é<strong> Brasileiro</strong>`
+           }else{
+               cad.innerHTML +=`Você é <strong>Estrangeiro</strong>`
+           }
+           }
+    </script>
+
+</body>
+</html>
