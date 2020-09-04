@@ -17,18 +17,28 @@ function verificar() {
             genero = 'Homem'
             if (idade >=0 &&idade <10){
                 //Criança
+                img.setAttribute('src','bebehomem.png')
             }else if (idade < 21){
                 //Jovem
+                img.setAttribute('src',)
             }else if(idade <50){
                 //adulto
+            }else{
+                //idoso
             }
-            
+         }else if (fsex[1].checked) {
+                genero = 'Mulher'
+                if (idade >=0 &&idade <10){
+                    //Criança
+                }else if (idade < 21){
+                    //Jovem
+                }else if(idade <50){
+                    //adulto
+                }else{
+                    //idoso
+                }
+            }
 
-
-
-        } else if (fsex[1].checked) {
-            genero = 'Mulher'
-        }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
     }
